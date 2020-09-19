@@ -58,6 +58,12 @@
     <Compile Include="FormBoard.Designer.cs">
       <DependentUpon>FormBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCard.Designer.cs">
+      <DependentUpon>FormCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCreateRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormBoard.resx">
       <DependentUpon>FormBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCard.resx">
+      <DependentUpon>FormCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCreateRoom.resx">
       <DependentUpon>FormCreateRoom.cs</DependentUpon>
@@ -129,6 +138,9 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
     <Content Include="Resources\concept_bulb.png" />
+    <EmbeddedResource Include="Resources\words_medium.txt" />
+    <EmbeddedResource Include="Resources\words_hard.txt" />
+    <EmbeddedResource Include="Resources\words_easy.txt" />
     <None Include="Resources\concept_cube.png" />
     <None Include="Resources\concept_questionmark.png" />
     <None Include="Resources\concept_exclamationpoint.png" />

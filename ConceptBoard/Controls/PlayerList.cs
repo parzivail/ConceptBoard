@@ -49,9 +49,9 @@ namespace ConceptBoard.Controls
 
 			foreach (var player in Players)
 			{
-				var playerFont = new Font(Font, CurrentPlayer == player.Id ? FontStyle.Bold : FontStyle.Regular);
+				var playerFont = new Font(Font, CurrentPlayer == player.Id ? FontStyle.Italic : FontStyle.Regular);
 
-				g.DrawString(player.Nickname, playerFont, fgBrush, x, y);
+				g.DrawString(player.Nickname, playerFont, fgBrush, CurrentPlayer == player.Id ? x + 20 : x, y);
 
 				y += lineSpacing;
 			}

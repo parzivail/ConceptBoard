@@ -16,6 +16,8 @@ namespace ConceptBoard
 		public static event EventHandler<EventArgs> Connected;
 		public static event EventHandler<EventArgs> Disconnected;
 
+		public static event EventHandler<EventArgs> TurnStarted;
+
 		public static event EventHandler<SPacketJoinRoom> JoinRoomResponse;
 		public static event EventHandler<SPacketCreateRoom> CreateRoomResponse;
 		public static event EventHandler<SPacketSyncRoom> SyncRoom;
@@ -86,16 +88,18 @@ namespace ConceptBoard
 
 								if (Room == null || Room.Id != packet.RoomId)
 									Room = new Room(packet.RoomId);
-								
+
+								Player = packet.Players[packet.YourPlayer];
+
 								Room.Players.Clear();
 								Room.Players.AddRange(packet.Players);
 
 								Room.Board.Clear();
 								Room.Board.AddRange(packet.Board);
 
-								Room.CurrentPlayer = packet.CurrentPlayer;
+								if (Room.CurrentPlayer != Player.Id && packet.CurrentPlayer == Player.Id) TurnStarted?.Invoke(null, EventArgs.Empty);
 
-								Player = packet.Players[packet.YourPlayer];
+								Room.CurrentPlayer = packet.CurrentPlayer;
 
 								SyncRoom?.Invoke(null, packet);
 								break;

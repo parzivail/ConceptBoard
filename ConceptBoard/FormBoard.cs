@@ -61,6 +61,12 @@ namespace ConceptBoard
 			lRoomId.Text = roomId;
 			GameClient.SyncRoom += GameClientOnSyncRoom;
 			GameClient.FloatingPiece += GameClientOnFloatingPiece;
+			GameClient.TurnStarted += GameClientOnTurnStarted;
+		}
+
+		private void GameClientOnTurnStarted(object sender, EventArgs e)
+		{
+			new FormCard().ShowDialog();
 		}
 
 		private void FormBoard_Load(object sender, EventArgs e)
@@ -165,8 +171,9 @@ namespace ConceptBoard
 			foreach (var gutterPiece in _gutterPieces)
 				DrawPiece(gutterPiece.Piece, gutterPiece.Position.X, gutterPiece.Position.Y);
 
-			foreach (var piece in GameClient.Room.Board)
-				DrawPiece(piece.Type, piece.X, piece.Y);
+			if (GameClient.Room != null)
+				foreach (var piece in GameClient.Room.Board)
+					DrawPiece(piece.Type, piece.X, piece.Y);
 
 			if (_selectedGamePiece != 0)
 				DrawPiece(_selectedGamePiece, _mouseLocation.X + _mouseGrabOffset.X,

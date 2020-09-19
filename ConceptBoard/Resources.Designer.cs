@@ -109,5 +109,157 @@ namespace ConceptBoard {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 101 Dalmations
+        ///Air bag
+        ///Aircraft carrier
+        ///Airport
+        ///Aladdin
+        ///Ambulance
+        ///Angel
+        ///Apple
+        ///Asprin
+        ///Assassin
+        ///Attic
+        ///Avatar
+        ///Banana
+        ///Bank
+        ///Barbecue
+        ///Barbie
+        ///Barge
+        ///Bat
+        ///Bathtub
+        ///Bedroom
+        ///Bee
+        ///Bell
+        ///Bike
+        ///Binoculars
+        ///Booger
+        ///Boots
+        ///Boxer
+        ///Bra
+        ///Brick
+        ///Bull
+        ///Butterfly
+        ///Cake
+        ///Canary
+        ///Canteen
+        ///Car stereo
+        ///Carpet
+        ///Cars
+        ///Castle
+        ///Cellar
+        ///Cellphone
+        ///Chainsaw
+        ///Chalet
+        ///Champagne
+        ///Cherry
+        ///Chimney
+        ///Chocolate
+        ///Christmas lights
+        ///Church
+        ///Cinema
+        ///Clown
+        ///Coca-Cola
+        ///Coconut
+        ///Coffee
+        ///Computer
+        ///Concord
+        ///Cow
+        ///Crab
+        ///Credit card
+        ///Crocod [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string words_easy {
+            get {
+                return ResourceManager.GetString("words_easy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A bad check
+        ///A good eye for distance
+        ///A picture is worth a thousand words
+        ///A rolling stone gathers no moss
+        ///A Study in Scarlet
+        ///Absent-minded
+        ///Achilles&apos; Heel
+        ///Adam Carolla
+        ///Adam Sandler
+        ///Add fuel to the fire
+        ///Age of Enlightenment
+        ///Al Capone
+        ///Alcatraz
+        ///Ali Baba
+        ///American Beauty
+        ///An iron fist in a velvet glove
+        ///Armed to the teeth
+        ///Around the World in 80 Days
+        ///Ask for someone&apos;s head
+        ///Aziz Ansari
+        ///Back to the Future
+        ///Bad things always come in threes
+        ///Bayoney
+        ///Be a third wheel
+        ///Be all spruced up
+        ///Be crystal clea [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string words_hard {
+            get {
+                return ResourceManager.GetString("words_hard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2001: A Space Odyssey
+        ///A Clockwork Orange
+        ///Accountant
+        ///Advertisement
+        ///Albud Dumbledore
+        ///Alf
+        ///Allen Ginsberg
+        ///Ammo clip
+        ///Amy Winehouse
+        ///Angry Birds
+        ///Animal Planet
+        ///Aphrodite
+        ///Archimedes
+        ///Aspartame
+        ///Astro Boy
+        ///Atlantis
+        ///Atomic bomb
+        ///Austin Powers
+        ///Bagheera
+        ///Baguette
+        ///Baker
+        ///Baloo
+        ///Bambi
+        ///Barcode
+        ///Batman
+        ///Battery
+        ///Beach
+        ///Beaver
+        ///Beer
+        ///Beyonce
+        ///Bilbo Baggins
+        ///Bill Clinton
+        ///Billboards
+        ///Billy the Kid
+        ///Black hole
+        ///Bleach
+        ///Blowing in the Wind
+        ///Bob Marley
+        ///Boondock Saints
+        ///Borat
+        ///Bowling
+        ///Bowling for Columbine
+        ///Brai [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string words_medium {
+            get {
+                return ResourceManager.GetString("words_medium", resourceCulture);
+            }
+        }
     }
 }
